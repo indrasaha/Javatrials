@@ -1,0 +1,3 @@
+com\niltech\template\service\rest\operation\DataService.class
+com\niltech\template\service\rest\operation\MyData.class
+com\niltech\template\service\rest\operation\RestTemplateApplication.class

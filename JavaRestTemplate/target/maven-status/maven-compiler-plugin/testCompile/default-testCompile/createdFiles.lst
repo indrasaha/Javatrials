@@ -1,0 +1,4 @@
+com\niltech\template\service\rest\test\_SmokeTest.class
+com\niltech\template\service\rest\test\_NoServerApplicationTest.class
+com\niltech\template\service\rest\test\_HttpRequestTest.class
+com\niltech\template\service\rest\test\_WebLayerTest.class
