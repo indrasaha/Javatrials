@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Implementation-Title: JavaJPATemplate
 Implementation-Version: 0.0.1-SNAPSHOT
-Built-By: 16597
+Built-By: Indra
 Implementation-Vendor-Id: com.niltech.template
-Build-Jdk: 1.8.0_171
+Build-Jdk: 1.8.0_121
 Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
  ot-starter-parent/JavaJPATemplate
 Created-By: Maven Integration for Eclipse
