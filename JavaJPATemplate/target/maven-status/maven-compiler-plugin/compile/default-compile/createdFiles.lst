@@ -1,0 +1,5 @@
+com\niltech\template\data\jpa\mysql\client\ApplicationLocalClient.class
+com\niltech\template\data\jpa\mysql\MySQLDataServiceImpl.class
+com\niltech\template\data\jpa\mysql\JPATemplateApplication.class
+com\niltech\template\data\jpa\mysql\MyDBData.class
+com\niltech\template\data\jpa\mysql\MySQLDataRepository.class
