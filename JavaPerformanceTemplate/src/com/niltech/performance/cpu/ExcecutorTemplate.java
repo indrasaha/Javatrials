@@ -22,47 +22,25 @@ class RunnableTaskInvoker implements Executor {
 	}
 }
 
-class ExcecutorRunnableTask implements Runnable {
+class ExcecutorRunnableTask {
 	private static long startTime = 0;
-	private static int count = 0;
-	private int myid;
-
-	@Override
-	public void run() {
-		startTime = Instant.now().get(ChronoField.MILLI_OF_SECOND);
-		System.out.println(this.getClass().getSimpleName() + "[" + myid + "] " + " thread Starts");
-		for (int i = 1; i <= 10; i++) {
-			System.out.println("ID[" + myid + "] Tick - " + i);
-			try {
-				TimeUnit.MILLISECONDS.sleep((long) Math.random() * 10000);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-		}
-		System.out.println(this.getClass().getSimpleName() + "[" + myid + "] " + " Ends - "
-				+ (Instant.now().get(ChronoField.MILLI_OF_SECOND) - startTime) + " ms");
-	}
-
-	public ExcecutorRunnableTask() {
-		this.myid = ++count;
-	}
 
 	public static void UsingExcecutorRunnableThread() {
 		System.out.println("Main Starts");
 		startTime = Instant.now().get(ChronoField.MILLI_OF_SECOND);
 		RunnableTaskInvoker invoker = new RunnableTaskInvoker();
-		invoker.execute(new ExcecutorRunnableTask());
-		invoker.execute(new ExcecutorRunnableTask());
-		invoker.execute(new ExcecutorRunnableTask());
-		invoker.execute(new ExcecutorRunnableTask());
+		invoker.execute(new RunnableTask());
+		invoker.execute(new RunnableTask());
+		invoker.execute(new RunnableTask());
+		invoker.execute(new RunnableTask());
 		System.out.println("Main Ends - " + (Instant.now().get(ChronoField.MILLI_OF_SECOND) - startTime) + " ms");
 	}
 }
 
 class CallableTaskInvoker implements Executor {
-	public void execute(ExcecutorCallableTask callableTask) throws Exception {
+	public void execute(CallableTask callableTask) throws Exception {
 		System.out.println("Invoking Task " + callableTask.getClass().getSimpleName());
-		String result = callableTask.call();
+		String result = (String) callableTask.call();
 		System.err.println(result);
 	}
 
@@ -73,39 +51,15 @@ class CallableTaskInvoker implements Executor {
 	}
 }
 
-class ExcecutorCallableTask implements Callable<Object> {
+class ExcecutorCallableTask {
 	private static long startTime = 0;
-	private static int count = 0;
-	private int myid;
-
-	@Override
-	public String call() throws Exception {
-		startTime = Instant.now().get(ChronoField.MILLI_OF_SECOND);
-		System.out.println(this.getClass().getSimpleName() + "[" + myid + "] " + " thread Starts");
-		for (int i = 1; i <= 10; i++) {
-			System.out.println("ID[" + myid + "] Tick - " + i);
-			try {
-				TimeUnit.MILLISECONDS.sleep((long) Math.random() * 10000);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-		}
-		//System.out.println(this.getClass().getSimpleName() + "[" + myid + "] " + " Ends - "
-		//		+ (Instant.now().get(ChronoField.MILLI_OF_SECOND) - startTime) + " ms");
-		return ""+this.getClass().getSimpleName() + "[" + myid + "] " + " Ends - "
-		+ (Instant.now().get(ChronoField.MILLI_OF_SECOND) - startTime) + " ms";
-	}
-
-	public ExcecutorCallableTask() {
-		this.myid = ++count;
-	}
 
 	public static void UsingExcecutorCallableThread() {
 		System.out.println("Main Starts");
 		startTime = Instant.now().get(ChronoField.MILLI_OF_SECOND);
 		CallableTaskInvoker invoker = new CallableTaskInvoker();
 		try {
-			invoker.execute(new ExcecutorCallableTask());
+			invoker.execute(new CallableTask());
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
