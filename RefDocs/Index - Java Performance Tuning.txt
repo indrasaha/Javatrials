@@ -17,7 +17,7 @@ Java Performance Management
 
 ## Java Process - CPU
 - Simulate CPU intensive Java Process
-- CPU efficient code
+- CPU Efficient Code
 - Parallel Execution (Threads & Native Process)
 - Thread Synchronization
 
