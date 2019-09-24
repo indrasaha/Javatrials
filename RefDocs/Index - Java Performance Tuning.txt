@@ -1,0 +1,36 @@
+Java Performance Management
+---------------------------
+
+## Java Memory Organization
+- Simulate high memory Java Process
+	- Configure Java Runtime parameters
+- Java Process Memory
+	- Visualize or Compute the Active Java process memory
+		- Plot the usage in different types of memory blocks (Heap/YG/OG/Native/Metaspace etc.)
+	- Tools and techniques
+	- Memory Analysis
+- Memory Optomization
+	- Efficient Coding
+	- Best pr
+- GC Strategy & Optomization
+	- Maximize multi-thread throughput
+
+## Java Process - CPU
+- Simulate CPU intensive Java Process
+- CPU efficient code
+- Parallel Execution (Threads & Native Process)
+- Thread Synchronization
+
+## Multi-JVM Process
+ - Data sharing between multi-jvm
+ - Native process synchronization
+
+## Debuging Memory Leak
+ - Approach & Identification
+ - Tools to detect
+
+## Performance Testing
+
+## Memory requirement for containers
+
+## Java 8 & above features

@@ -1,11 +1,15 @@
 Java Performance Management
 ---------------------------
 - Memory optimization
-- GC optomization
+- GC Strategy & Optomization
 - CPU efficient code
 - Performance codeing
 - Memory Analysis
+- Memory leakage debugging
 - Tools and techniques
+- Performance Testing
+	- Jmeter
+	- Eclipse TPTP
 
 Distributed Session Management
 ------------------------------
@@ -15,6 +19,9 @@ Distributed Session Management
 - Signed Cookie (JSON web token)
 - Web Socket sessions
 - session management on mobile apps 
+- Session Management for Clustered Applications 
+	- Coherence server (Oracle)
+- Hazelcast
 
 Q- How to manage session incase cookies are disabled?
 
@@ -27,13 +34,41 @@ Microservice Architechure
 - 12 Factors priciples
 - NGNIX 
 
+NodeJS
+------
+
 SSO Architecture
 ----------------
 - Open Source
 - Authentication for Mobiles 
+- JSON Web Token
+- OAuth2
+
+AWS Architecture
+----------------
+
+Virtualization
+--------------
+
+Terminals
+---------
+MobaXterm
+Putty
+
 
 Git Operations
 --------------
 
 Continious Integrations
 -----------------------
+- Jenkins
+
+Containerization
+----------------
+- Dockers
+- Kubernatics
+
+Build Tools
+-----------
+Maven
+Yam
