@@ -1,0 +1,39 @@
+Java Performance Management
+---------------------------
+- Memory optimization
+- GC optomization
+- CPU efficient code
+- Performance codeing
+- Memory Analysis
+- Tools and techniques
+
+Distributed Session Management
+------------------------------
+- Sticky Session
+- Externalize Session Reddis
+- Session management in cloud (AWS)
+- Signed Cookie (JSON web token)
+- Web Socket sessions
+- session management on mobile apps 
+
+Q- How to manage session incase cookies are disabled?
+
+Cache Management
+----------------
+- Distributed Cache management
+
+Microservice Architechure
+-------------------------
+- 12 Factors priciples
+- NGNIX 
+
+SSO Architecture
+----------------
+- Open Source
+- Authentication for Mobiles 
+
+Git Operations
+--------------
+
+Continious Integrations
+-----------------------
