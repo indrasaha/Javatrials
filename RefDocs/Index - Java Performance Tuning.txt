@@ -7,19 +7,20 @@ Java Performance Management
 - Java Process Memory
 	- Visualize or Compute the Active Java process memory
 		- Plot the usage in different types of memory blocks (Heap/YG/OG/Native/Metaspace etc.)
+		- Tools - MAT, JConsole, JVisualVM, jmap
 	- Tools and techniques
 	- Memory Analysis
 - Memory Optomization
 	- Efficient Coding
-	- Best pr
+	- Best practices
 - GC Strategy & Optomization
 	- Maximize multi-thread throughput
 
 ## Java Process - CPU
-- Simulate CPU intensive Java Process
-- CPU Efficient Code
-- Parallel Execution (Threads & Native Process)
-- Thread Synchronization
+ - Simulate CPU intensive Java Process
+ - CPU Efficient Code
+ - Parallel Execution (Threads & Native Process)
+ - Thread Synchronization
 
 ## Multi-JVM Process
  - Data sharing between multi-jvm
@@ -28,9 +29,13 @@ Java Performance Management
 ## Debuging Memory Leak
  - Approach & Identification
  - Tools to detect
+ - Memory Dump
+ - Thread Dump
 
 ## Performance Testing
 
 ## Memory requirement for containers
 
 ## Java 8 & above features
+
+## Tenancy based Architecture

@@ -33,6 +33,8 @@ Microservice Architechure
 -------------------------
 - 12 Factors priciples
 - NGNIX 
+- Transactions
+- Queries
 
 NodeJS
 ------

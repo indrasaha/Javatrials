@@ -1,0 +1,25 @@
+AWS - Solution Architect 
+------------------------
+=1 - EC2
+=2 - ELB
+=3 - Auto-scaling 
+=4 - S3
+=5 - IAM
+=6 - User Data
+7 - CloudWatch
+=8 - VPC
+9 - CloudFront
+10- Workspaces
+11- Directory Services
+12- Lambda
+13- Kinesis
+=14- CloudFormation
+15- EBS
+16- Glacier
+17- CloudTrail
+18- SNS
+19- SQS
+=20- AMI & Snapshot
+21- RDS
+22- API Gateway
+23- Elastic Casche
