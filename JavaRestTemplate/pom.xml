@@ -30,7 +30,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.jayway.jsonpath</groupId>
@@ -68,21 +68,21 @@
 				<executions>
 					<execution>
 						<id>jar-services-provided</id>
-						<phase>compile</phase>
+						<phase>deploy</phase>
 						<goals>
 							<goal>jar</goal>
 						</goals>
+						<configuration>
+							<classifier>exec</classifier>
+							<archive>
+								<manifest>
+									<addClasspath>true</addClasspath>
+									<mainClass>com.niltech.template.service.rest.operation.RestTemplateApplication</mainClass>
+								</manifest>
+							</archive>
+						</configuration>
 					</execution>
 				</executions>
-				<configuration>
-					<classifier>exec</classifier>
-					<archive>
-						<manifest>
-							<addClasspath>true</addClasspath>
-							<mainClass>com.niltech.template.service.rest.operation.RestTemplateApplication</mainClass>
-						</manifest>
-					</archive>
-				</configuration>
 			</plugin>
 		</plugins>
 	</build>
@@ -104,6 +104,5 @@
 			<url>https://repo.spring.io/libs-release</url>
 		</pluginRepository>
 	</pluginRepositories>
-
 	<packaging>war</packaging>
 </project>

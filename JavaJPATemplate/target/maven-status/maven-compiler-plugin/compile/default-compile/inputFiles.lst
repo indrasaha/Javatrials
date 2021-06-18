@@ -1,5 +1,6 @@
-D:\Workspace\codebase\javaspace\JavaJPATemplate\src\main\com\niltech\template\data\jpa\mysql\MyDBData.java
-D:\Workspace\codebase\javaspace\JavaJPATemplate\src\main\com\niltech\template\data\jpa\mysql\client\ApplicationLocalClient.java
-D:\Workspace\codebase\javaspace\JavaJPATemplate\src\main\com\niltech\template\data\jpa\mysql\MySQLDataRepository.java
-D:\Workspace\codebase\javaspace\JavaJPATemplate\src\main\com\niltech\template\data\jpa\mysql\MySQLDataServiceImpl.java
-D:\Workspace\codebase\javaspace\JavaJPATemplate\src\main\com\niltech\template\data\jpa\mysql\JPATemplateApplication.java
+C:\Workspace\git-local-repo\Javatrials\JavaJPATemplate\src\main\com\niltech\template\data\jpa\mysql\MySQLDataRepository.java
+C:\Workspace\git-local-repo\Javatrials\JavaJPATemplate\src\main\com\niltech\template\data\jpa\mysql\JPATemplateApplication.java
+C:\Workspace\git-local-repo\Javatrials\JavaJPATemplate\src\main\com\niltech\template\data\jpa\mysql\MyDBData.java
+C:\Workspace\git-local-repo\Javatrials\JavaJPATemplate\src\main\com\niltech\template\data\service\MyDataService.java
+C:\Workspace\git-local-repo\Javatrials\JavaJPATemplate\src\main\com\niltech\template\data\jpa\mysql\client\ApplicationLocalClient.java
+C:\Workspace\git-local-repo\Javatrials\JavaJPATemplate\src\main\com\niltech\template\data\jpa\mysql\MySQLDataServiceImpl.java

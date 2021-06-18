@@ -24,12 +24,18 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
+			<scope>runtime</scope>
 		</dependency>
 
+		<!-- <dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
+		</dependency> -->
+		
 		<dependency>
 			<groupId>com.niltech.template</groupId>
-			<artifactId>JavaRestTemplate</artifactId>
-			<classifier>common</classifier>
+			<artifactId>JavaTemplateCommon</artifactId>
 			<version>1.0.0</version>
 			<type>jar</type>
 		</dependency>
@@ -62,7 +68,7 @@
 				<executions>
 					<execution>
 						<id>jar-services-jpa</id>
-						<phase>compile</phase>
+						<phase>install</phase>
 						<goals>
 							<goal>jar</goal>
 						</goals>

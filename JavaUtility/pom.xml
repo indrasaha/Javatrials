@@ -12,6 +12,7 @@
 		<dependency>
 			<groupId>com.niltech.template</groupId>
 			<artifactId>JavaRestTemplate</artifactId>
+			<!-- common to be generated -->
 			<classifier>common</classifier>
 			<version>1.0.0</version>
 			<type>jar</type>

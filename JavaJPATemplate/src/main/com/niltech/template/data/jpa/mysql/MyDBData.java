@@ -1,25 +1,25 @@
 package com.niltech.template.data.jpa.mysql;
 
+import java.util.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
-import com.niltech.template.service.rest.operation.common.MyDataInterface;
-
 @Component
-@Entity(name="MyData")
-@Profile("PROD")
-public class MyDBData implements MyDataInterface{
+@Entity(name="MYDATA")
+//@Profile("PROD")
+public class MyDBData {
 
 	@Id
     @GeneratedValue(strategy=GenerationType.AUTO)
 	private long id;
 	private String content;
 	private double dValue;
+	private Date createdtime;
 	
 	public MyDBData() {
 		super();
@@ -30,34 +30,52 @@ public class MyDBData implements MyDataInterface{
 		this.content = content;
 		this.dValue = dValue;
 	}
-
-	public void setId(long id) {
+	
+	public MyDBData(long id, String content, double dValue) {
+		super();
 		this.id = id;
-	}
-
-	public void setContent(String content) {
 		this.content = content;
+		this.dValue = dValue;
 	}
 
 	public long getId() {
 		return id;
 	}
 
+	public void setId(long id) {
+		this.id = id;
+	}
+
 	public String getContent() {
 		return content;
 	}
-	
-	public Double getdValue() {
+
+	public void setContent(String content) {
+		this.content = content;
+	}
+
+	public double getdValue() {
 		return dValue;
 	}
 
-	public void setdValue(Double dValue) {
+	public void setdValue(double dValue) {
 		this.dValue = dValue;
+	}
+
+	public Date getCreatedtime() {
+		return createdtime;
+	}
+
+	public void setCreatedtime(Date createdtime) {
+		this.createdtime = createdtime;
 	}
 
 	@Override
 	public String toString() {
-		return "MyData [id=" + id + ", content=" + content + ", dValue=" + dValue + "]";
+		return "MyDBData [id=" + id + ", content=" + content + ", dValue=" + dValue + ", created=" + createdtime + "]";
 	}
+
+
+	
 	
 }

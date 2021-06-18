@@ -1,5 +1,7 @@
 package com.niltech.template.data.jpa.mysql.client;
 
+import java.util.Calendar;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.ApplicationListener;
@@ -19,7 +21,9 @@ public class ApplicationLocalClient implements ApplicationListener<ContextStarte
     @EventListener(ApplicationReadyEvent.class)
     public void EventListenerExecute(){
 		for (int i = 0; i < 5; i++) {
-			myDataRepository.save(new MyDBData("Content - " + i, i * 4));
+			MyDBData dbdata = new MyDBData("Content - " + i, i * 4);
+			dbdata.setCreatedtime(Calendar.getInstance().getTime());
+			myDataRepository.save(dbdata);
 		}
     }
 

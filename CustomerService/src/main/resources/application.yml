@@ -1,0 +1,17 @@
+server:
+    port: 9002
+
+spring:
+    application:
+        name: Customer-Service
+    datasource:
+        url: jdbc:mysql://192.168.56.103:3306/niltech
+        username: dbadmin
+        password: dbadmin
+    jpa:
+        show-sql: true
+        generate-ddl: true
+
+        hibernate:
+            default_schema: niltech
+            ddl-auto: update

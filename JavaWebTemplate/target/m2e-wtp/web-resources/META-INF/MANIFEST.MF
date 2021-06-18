@@ -1,11 +1,11 @@
 Manifest-Version: 1.0
+Built-By: Indra
+Build-Jdk: 14.0.2
 Implementation-Title: java-web-template
 Implementation-Version: 0.1.0
-Built-By: 16597
 Implementation-Vendor-Id: com.niltech.template
-Build-Jdk: 1.8.0_171
-Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
- ot-starter-parent/java-web-template
-Created-By: Maven Integration for Eclipse
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/java-web-template
 Main-Class: com.niltech.rest.service.producer.GreetingApplication
+Created-By: Maven Integration for Eclipse
 
